@@ -38,3 +38,4 @@ if __name__ == "__main__":
     pool.map(process_pdf, zip(file_list, range(len(file_list))))
     pool.close()
     print(f"Last file completed in {time.time() - start_time} seconds")
+    
